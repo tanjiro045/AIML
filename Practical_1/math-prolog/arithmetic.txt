@@ -1,0 +1,23 @@
+% Addition
+addition(X, Y, Result) :-
+    Result is X + Y.
+
+% Subtraction
+subtraction(X, Y, Result) :-
+    Result is X - Y.
+
+% Multiplication
+multiplication(X, Y, Result) :-
+    Result is X * Y.
+
+% Division
+division(X, Y, Result) :-
+    Y =\= 0,
+    Result is X / Y.
+
+% Example queries
+% addition(5, 3, Result).        % Result = 8
+% subtraction(10, 4, Result).    % Result = 6
+% multiplication(7, 2, Result).  % Result = 14
+% division(20, 5, Result).       % Result = 4
+% division(10, 0, Result).       % This will fail due to division by zero
